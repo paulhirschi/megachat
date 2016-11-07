@@ -113,7 +113,7 @@ form.send_message button {
 
 form.send_message button img {
   width: 200%;
-  margin-top: -4px;
+  margin-top: -5px;
 }
 
 form.send_message button:hover {
@@ -226,4 +226,15 @@ form.send_message button:hover {
 
 .get_user_name button:hover {
   cursor: pointer;
+}
+
+footer {
+  color: #eee;
+  position: absolute;
+  bottom: 5px;
+  font-size: 0.75em;
+}
+
+footer a {
+  color: #ddd;
 }
