@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mega Chat</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <ul id="user-list"></ul>
+  <div class="chat-window">
+    <ul id="messages"></ul>
+  </div>
+  <div class="chat-bubble-container"></div>
+  <form action="" class="send_message">
+    <div class="send_message_inner">
+      <input id="m" autocomplete="off" maxlength="100" required>
+      <button type="submit"><img src="img/arrow.png"></button>
+    </div>
+  </form>
+  <div class="users-joined-wrapper">
+    <h4>Currently Online:</h4>
+    <ul id="users-joined"></ul>
+  </div>
+  <div class="get_user_name_wrapper">
+    <div class="get_user_name_inner">
+      <img src="img/chat.svg">
+      <h3>Mega Chat!</h3>
+      <form action="" class="get_user_name">
+        <input type="text" id="user_name" maxlength="25" placeholder="First Name" autofocus required>
+        <button type="submit">Ok</button>
+      </form>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
